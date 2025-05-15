@@ -1,0 +1,61 @@
+.info {
+  @include background(100% 56%);
+  @include image-set("info-bg-mobile");
+  @include container;
+  background-position: top;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+
+  &::before {
+    @include pseudo-element(auto, 431px);
+    position: absolute;
+    background-image: $gradient-basic;
+    left: 0;
+    right: 0;
+    bottom: -10%;
+    z-index: -1;
+  }
+}
+
+.info__wrapper {
+  text-align: center;
+  color: $color-alternate;
+  background-image: linear-gradient(154deg, rgba($color-accent-basic, 0.7) -2%, rgba($color-basic, 0.8) 29%, $color-basic 45%);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 108px 28px 36px;
+}
+
+.info__title {
+  @include font(34px, 46px);
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.info__text {
+  margin-bottom: 18px;
+}
+
+.info__image-wrapper {
+  @include background;
+  @include image-set("sphere-mobile");
+  padding: 72px 30px 81px;
+  margin-bottom: 14px;
+}
+
+.info__image {
+  display: block;
+  width: 116px;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.info__link {
+  @include background(15px 9px);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("./../../icons/arrow.svg");
+  margin: 0 auto;
+}

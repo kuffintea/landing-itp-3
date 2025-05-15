@@ -1,0 +1,33 @@
+.features {
+  @include container;
+  @include background(100% 85%, top);
+  background-image: $gradient-basic;
+  margin-bottom: 85px;
+}
+
+.features__wrapper {
+  padding-bottom: 90px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.features__title {
+  @include title;
+  padding-right: 20%;
+  margin-bottom: 60px;
+}
+
+.features__list {
+  border-radius: 30px;
+  background-color: $color-alternate;
+  box-shadow: 0 4px 10px rgba($color-basic, 0.15);
+  padding: 25px 13px 28px;
+  position: relative;
+
+  &::after {
+    @include pseudo-element(auto, auto);
+    @include background;
+    @include image-set("phone-mobile");
+    position: absolute;
+    inset: -16px -4px -4px 50%;
+  }
+}

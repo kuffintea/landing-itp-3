@@ -1,0 +1,37 @@
+.about {
+  @include container;
+  padding-top: 50px;
+  margin-bottom: 73px;
+  position: relative;
+
+  &::after {
+    @include pseudo-element(290px, auto);
+    @include background;
+    @include image-set("about-bg-mobile");
+    background-position: right;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    bottom: 37px;
+  }
+}
+
+.about__wrapper {
+  padding-bottom: 54px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.about__title {
+  @include title;
+  margin-bottom: 18px;
+}
+
+.about__text {
+  @include font(12px, 15px);
+  padding-right: 50%;
+  margin-bottom: 37px;
+}
+
+.about__btn {
+  margin-bottom: 18px;
+}

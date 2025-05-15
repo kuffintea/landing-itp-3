@@ -1,0 +1,34 @@
+.goals {
+  @include container;
+  margin-bottom: 64px;
+}
+
+.goals__wrapper {
+  padding-bottom: 85px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.goals__title {
+  @include title;
+  margin-bottom: 24px;
+}
+
+.goals__list-item {
+  @include font(15px, 18px);
+  margin-bottom: 22px;
+  display: flex;
+  gap: 4px;
+
+  &::before {
+    @include pseudo-element(27px, 30px);
+    @include background(12px);
+    background-color: $color-accent-main;
+    background-image: url("./../../icons/check.svg");
+    border: 3px solid $color-alternate;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

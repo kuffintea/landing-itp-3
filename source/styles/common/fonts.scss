@@ -1,0 +1,5 @@
+@include font-face("Inter", (url("../../fonts/inter/Inter-Light.woff2") format("woff2"), url("../../fonts/inter/Inter-Light.woff") format("woff")), 300);
+@include font-face("Inter", (url("../../fonts/inter/Inter-Regular.woff2") format("woff2"), url("../../fonts/inter/Inter-Regular.woff") format("woff")));
+@include font-face("Inter", (url("../../fonts/inter/Inter-Medium.woff2") format("woff2"), url("../../fonts/inter/Inter-Medium.woff") format("woff")), 500);
+@include font-face("Inter", (url("../../fonts/inter/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/inter/Inter-SemiBold.woff") format("woff")), 600);
+@include font-face("Inter", (url("../../fonts/inter/Inter-Bold.woff2") format("woff2"), url("../../fonts/inter/Inter-Bold.woff") format("woff")), 700);

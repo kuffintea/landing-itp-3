@@ -1,0 +1,16 @@
+/* display */
+$desktop: 1920px;
+
+/* fonts */
+$font-basic: "Inter", "Arial", serif;
+
+/* colors */
+$color-basic: #000000;
+$color-main: #2c2c2c;
+$color-second: #a6a6a6;
+$color-alternate: #ffffff;
+$color-accent-basic: #a53fff;
+$color-accent-main: #845cbb;
+$color-accent-second: #4300a1;
+
+$gradient-basic: radial-gradient(50% 50%, $color-accent-second, $color-alternate);

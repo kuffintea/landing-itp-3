@@ -1,0 +1,19 @@
+.btn {
+  @include font(14px, 17px);
+  text-align: center;
+  color: $color-basic;
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid $color-basic;
+  border-radius: 30px;
+  min-width: 113px;
+  width: fit-content;
+
+  &--accent {
+    font-weight: 600;
+    color: $color-alternate;
+    background-color: $color-basic;
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+}

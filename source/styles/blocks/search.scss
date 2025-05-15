@@ -1,0 +1,42 @@
+.search {
+  @include background(70% 100%, right);
+  @include container;
+  background-image: $gradient-basic;
+  margin-bottom: 61px;
+  position: relative;
+
+  &::after {
+    @include pseudo-element(auto, auto);
+    @include background;
+    @include image-set("laptop-mobile");
+    background-position: center left;
+    position: absolute;
+    inset: 0;
+    right: 123px;
+  }
+}
+
+.search__wrapper {
+  padding-bottom: 145px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.search__title {
+  @include title;
+  padding-right: 20%;
+  margin-bottom: 74px;
+}
+
+.search__text {
+  @include font(8px, 10px);
+  @include background(9px 13px, right 8px bottom 7px);
+  width: 187px;
+  background-color: rgba($color-alternate, 0.95);
+  background-image: url("./../../icons/shield.svg");
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba($color-basic, 0.25);
+  padding: 13px 26px 20px 12px;
+  margin: 0 auto 0 109px;
+  position: relative;
+  z-index: 1;
+}

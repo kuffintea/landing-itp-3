@@ -1,0 +1,67 @@
+.slider {
+  position: relative;
+
+  &::before {
+    @include pseudo-element(auto, auto);
+    @include background;
+    @include image-set("laptop-box-mobile");
+    position: absolute;
+    inset: 18px 0 6px;
+  }
+}
+
+.slider__list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+  z-index: 1;
+}
+
+.slider__item {
+  flex: 1 0 100%;
+}
+
+.slider__panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  z-index: 1;
+}
+
+.slider__panel-item {
+  display: flex;
+}
+
+.slider__panel-btn {
+  width: 41px;
+  height: 6px;
+  background-color: #bdbdbd;
+  border-radius: 20px;
+
+  &--active {
+    background-color: $color-accent-main;
+  }
+}
+
+.slider__panel-backward,
+.slider__panel-forward {
+  @include background;
+  width: 16px;
+  height: 16px;
+  background-image: url("./../../icons/slider.svg");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slider__panel-backward {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}

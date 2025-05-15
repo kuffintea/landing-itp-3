@@ -1,0 +1,22 @@
+.advantages {
+  @include container;
+  margin-bottom: 75px;
+  background-image: $gradient-basic;
+}
+
+.advantages__wrapper {
+  padding-bottom: 65px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.advantages__title {
+  @include title;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px 8px;
+}

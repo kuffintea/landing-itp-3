@@ -1,0 +1,23 @@
+.soon {
+  @include container;
+  margin-bottom: 94px;
+}
+
+.soon__wrapper {
+  padding-right: 25%;
+  padding-bottom: 47px;
+  border-bottom: 1px solid rgba($color-basic, 0.5);
+}
+
+.soon__title {
+  @include title;
+  margin-bottom: 16px;
+}
+
+.soon__text {
+  margin-bottom: 21px;
+}
+
+.soon__btn {
+  margin-bottom: 12px;
+}

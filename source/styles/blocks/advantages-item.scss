@@ -1,0 +1,62 @@
+.advantages-item {
+  text-align: center;
+  display: block;
+  background-color: $color-alternate;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba($color-basic, 0.15);
+  padding: 50px 18px 22px;
+  position: relative;
+
+  &::before {
+    @include pseudo-element(51px, 62px);
+    background-color: $color-alternate;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba($color-basic, 0.15);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    @include pseudo-element(35px, 35px);
+    @include background;
+    background-image: url("./../../images/lamp.gif");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--search::after {
+    background-image: url("./../../images/loop.gif");
+  }
+
+  &--simple::after {
+    background-image: url("./../../images/cup.gif");
+  }
+
+  &--users::after {
+    background-image: url("./../../images/users.gif");
+  }
+
+  &--safe::after {
+    background-image: url("./../../images/save.gif");
+  }
+
+  &--care::after {
+    background-image: url("./../../images/care.gif");
+  }
+}
+
+.advantages-item__title {
+  @include font(16px, 18px);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.advantages-item__text {
+  @include font(10px, 12px);
+  font-weight: 300;
+  margin-bottom: 0;
+}
